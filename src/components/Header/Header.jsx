@@ -1,7 +1,8 @@
 import React from 'react'
-import Logo from './Logo'
-import NavigationDesktop from './NavigationDesktop';
-import CtaButton from './CtaButton';
+import Logo from './components/Logo'
+import NavigationDesktop from './components/NavigationDesktop';
+import CtaButton from '../Header/components/CtaButton';
+
 
 const Header = () => {
 
@@ -34,13 +35,15 @@ const Header = () => {
 
 
   return (
-    <div className='container mx-auto px-6 py-4 bg-beige'>
-     <div className='flex items-center justify-between'>
-     <Logo />
-     <NavigationDesktop navLinks={navLinks}/>
-     <CtaButton />
-     </div>
+    
+    <div className='flex justify-between  items-center px-4 py-4 md:px-16 md:py-8 bg-beige'>
+    <Logo />    
+    <NavigationDesktop navLinks={navLinks} />
+    <CtaButton />
+   
     </div>
+    
+    
   )
 }
 
