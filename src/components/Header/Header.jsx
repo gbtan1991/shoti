@@ -36,7 +36,7 @@ const Header = () => {
 
   return (
     
-    <div className='flex justify-between  items-center px-4 py-4 md:px-16 md:py-8 bg-beige'>
+    <div className='flex justify-between items-center px-4 py-4 md:px-16 md:py-8 bg-beige'>
     <Logo />    
     <NavigationDesktop navLinks={navLinks} />
     <CtaButton />
